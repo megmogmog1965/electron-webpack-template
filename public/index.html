@@ -31,15 +31,19 @@
     <script>if (window.module) module = window.module;</script>
   </head>
   <body>
-    <div class="center">
-      <h1>hello world !</h1>
-      <div class="lds-hourglass"></div>
-    </div>
-
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
+
+    <div class="center">
+      <h1>hello world !</h1>
+      <div class="lds-hourglass"></div>
+
+      <form action="/" method="GET">
+        <input type="button" value="Push me !" onClick="renderer.onbutton();" />
+      </form>
+    </div>
+
     <script type="text/javascript" src="./renderer.js"></script>
     <!--
       This HTML file is a template.

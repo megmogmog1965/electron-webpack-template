@@ -26,7 +26,9 @@ var renderer = () => ({
   entry: './src/renderer/index.ts',
   output: {
     filename: 'renderer.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    library: 'renderer',
+    libraryTarget: 'umd'
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json']
