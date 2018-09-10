@@ -1,0 +1,25 @@
+{
+  "productName": "electron-webpack-template",
+  "appId": "com.megmogmog1965.electron-webpack-template",
+  "files": [],
+  "directories": {
+    "app": "dist",
+    "buildResources": "src/resources",
+    "output": "releases"
+  },
+  "mac": {
+    "target": [
+      {
+        "target": "dmg"
+      }
+    ]
+  },
+  "win": {
+    "target": [
+      {
+        "target": "portable",
+        "arch": [ "ia32" ]
+      }
+    ]
+  }
+}
