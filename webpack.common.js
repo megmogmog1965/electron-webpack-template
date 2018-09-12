@@ -53,7 +53,9 @@ var modules = {
       test: /\.ts$/,
       enforce: 'pre',
       loader: 'tslint-loader',
-      options: { /* Loader options go here */ }
+      options: {
+        emitErrors: true
+      }
     },
     {
       test: /\.js$/,
